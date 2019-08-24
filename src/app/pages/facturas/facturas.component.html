@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row mt-2">
+    <h1>Facturas</h1>
+  </div>
+  <div class="row">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Codigo Factura</th>
+          <th scope="col">Cliente</th>
+          <th scope="col">Ciudad</th>
+          <th scope="col">Nit</th>
+          <th scope="col">Total Factura</th>
+          <th scope="col">SubTotal</th>
+          <th scope="col">Iva</th>
+          <th scope="col">Retencion</th>
+          <th scope="col">Fecha Creacion</th>
+          <th scope="col">Estado</th>
+          <th scope="col">Pagada</th>
+          <th scope="col">Fecha Pago</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let factura of Facturas">
+          <td>{{ factura.CodigoFactura }}</td>
+          <td>{{ factura.Cliente }}</td>
+          <td>{{ factura.Ciudad }}</td>
+          <td>{{ factura.Nit }}</td>
+          <td>{{ factura.TotalFactura }}</td>
+          <td>{{ factura.SubTotal }}</td>
+          <td>{{ factura.Iva }}</td>
+          <td>{{ factura.Retencion }}</td>
+          <td>{{ factura.FechaCreacion }}</td>
+          <td>{{ factura.Estado }}</td>
+          <td>{{ factura.Pagada }}</td>
+          <td>{{ factura.FechaPago }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
